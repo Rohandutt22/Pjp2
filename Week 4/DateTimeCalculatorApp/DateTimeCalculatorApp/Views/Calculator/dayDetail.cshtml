@@ -1,0 +1,16 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h2>Getting Day details from a date</h2>
+<form method="post" asp-controller="Calculator" asp-action="dayDetail">
+    <label>select the date which you want</label>
+    <input name="input_date" id="input_date" type="date" />
+    <br />
+
+    
+    <input type="submit" />
+
+</form>
+<label>the result is: @ViewBag.result</label>

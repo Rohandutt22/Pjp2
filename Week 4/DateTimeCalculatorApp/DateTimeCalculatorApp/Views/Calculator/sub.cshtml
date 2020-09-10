@@ -1,0 +1,32 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h2>Substracting a no. to a date</h2>
+<form method="post" asp-controller="Calculator" asp-action="sub">
+    <label>select the date which you want</label>
+    <input name="input_date" id="input_date" type="date" />
+    <br />
+
+    <label>select any method</label>
+    <select name="select_type" id="select_type">
+        <option>Day</option>
+        <option>Month</option>
+        <option>Years</option>
+    </select>
+    <br />
+    <label>enter the no of the above selected</label>
+    <input type="number" name="no_of_units" id="no_of_units" />
+    <br />
+    <input type="submit" />
+
+</form>
+<label>the result is: @ViewBag.result</label>

@@ -1,0 +1,22 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h2>Date Time Calculator
+    @ViewBag.result</h2>
+<center>
+    Select Any option
+    <a asp-controller="Calculator"
+       asp-action="add"> for addition</a>
+    <br />
+    <a asp-controller="Calculator"
+       asp-action="sub"> for Substraction</a>
+    <br />
+    <a asp-controller="Calculator"
+       asp-action="dayDetail"> for getting day details</a>
+    <br />
+    <a asp-controller="Calculator"
+       asp-action="getPrevious"> for History</a>
+</center>
